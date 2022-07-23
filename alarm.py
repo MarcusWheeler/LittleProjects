@@ -16,8 +16,9 @@ alarm_time = datetime.now().replace(hour=int(sys.argv[1]), minute=int(sys.argv[2
 current_time = datetime.now()
 
 while(current_time < alarm_time):
-    current_time = datetime.now()
     time.sleep(15)
+    current_time = datetime.now()
+
 
 times_to_repeat = int(sys.argv[3])
 while(times_to_repeat > 0):
